@@ -9,14 +9,14 @@
           </span>
         </label>
     </div>
-    
+
     <div v-if="isChecked" class="pix">
       <div id="body" class="bg-pink-600 rounded-xl flex flex-col justify-center items-center w-80 mx-auto p-4">
       <span class="text-white flex gap-1 items-center justify-center mx-auto w-1/5 rounded-full mb-3 bg-pink-600 bg-opacity-80 text-base font-secundaria">
           <img src="./assets/Pix.svg" class="w-6"/>
           <p class="text-center">Pix</p>
       </span>
-        <h2 class="text-white font-secundaria text-xl">Selecione quantas pessoas vão com você</h2>
+        <h2 class="text-white font-secundaria text-xl">Selecione a quantidade de convites</h2>
         <div id="formHowMuchPerson" class="flex mt-4 items-center">
           <button name="minus" class="bg-white rounded-full flex items-center z-index-9" @click="decrementPersonPix">
             <span class="font-auxiliar-bold text-pink-600 pt-1 px-5 text-5xl flex items-center">-</span>
@@ -46,7 +46,7 @@
           <img src="./assets/CardIcon.svg" class="w-6"/>
           <p class="text-center">Cartão</p>
         </span>
-        <h2 class="text-white font-secundaria text-xl">Selecione quantas pessoas vão com você</h2>
+        <h2 class="text-white font-secundaria text-xl">Selecione a quantidade de convites</h2>
         <div id="formHowMuchPerson" class="flex mt-4 items-center">
           <button name="minus" class="bg-white rounded-full flex items-center z-index-9" @click="decrementPersonCartao">
             <span class="font-auxiliar-bold text-pink-600 pt-1 px-5 text-5xl flex items-center">-</span>
