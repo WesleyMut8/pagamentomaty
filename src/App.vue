@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-background-image h-screen bg-top bg-cover">
+  <div id="app" class="bg-background-image h-screen w-screen bg-cover">
     <div id="header" class="w-80 mx-auto flex flex-1 justify-center flex-col items-center">
         <img src="./assets/LogoPagode.svg" alt="Logo do Pagode do Negão 2.0" class="w-1/2">
         <label for="themeSwitcherOne" class="relative inline-flex select-none items-center justify-center gap-2 w-80 rounded-full p-3">
@@ -9,7 +9,7 @@
           </span>
         </label>
     </div>
-
+    
     <div v-if="isChecked" class="pix">
       <div id="body" class="bg-pink-600 rounded-xl flex flex-col justify-center items-center w-80 mx-auto p-4">
       <span class="text-white flex gap-1 items-center justify-center mx-auto w-1/5 rounded-full mb-3 bg-pink-600 bg-opacity-80 text-base font-secundaria">
