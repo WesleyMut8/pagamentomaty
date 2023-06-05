@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import
+    "base",
+    "layout",
+    "syntax-highlighting",
+    "bootstrap";
+  
+@font-face {
+  font-family: "dk"; 
+  src: url("/fonts/dk.otf"); 
+}
+@font-face {
+  font-family: "bebas"; 
+  src: url("/fonts/BebasNeue-Regular.ttf"); 
+}
