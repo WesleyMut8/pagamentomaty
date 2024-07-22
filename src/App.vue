@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="bg-background-image h-screen w-screen bg-cover">
     <div id="header" class="w-80 mx-auto flex flex-1 justify-center flex-col items-center">
-        <img src="./assets/LogoPagode.svg" alt="Logo do Pagode do Negão 2.0" class="w-1/2">
+        <div class="image-container mt-4">
+          <img src="./assets/logo.svg" alt="Logo do Pagode do Negão 2.1" class="logo-image">
+        </div>
         <label for="themeSwitcherOne" class="relative inline-flex select-none items-center justify-center gap-2 w-80 rounded-full p-3">
           <input type="checkbox" name="themeSwitcherOne" id="themeSwitcherOne" class="sr-only" v-model="isChecked">
           <span class="text-white flex px- items-center justify-center w-1/2 rounded-full py-2 bg-pink-600 text-lg font-secundaria isCheked:bg-pink-900">
@@ -202,4 +204,20 @@ export default {
 .font-secundaria {
   font-family: bebas;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* Altura definida */
+    width: 100%; /* Preencha a largura disponível */
+    overflow: hidden; /* Para garantir que nada ultrapasse o container */
+}
+
+.logo-image {
+    width: 240px; /* Largura definida */
+    height: 120px; /* Altura definida */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
 </style>
