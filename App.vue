@@ -2,7 +2,7 @@
   <div id="app" class="bg-background-image h-screen w-screen bg-cover">
     <div id="header" class="w-80 mx-auto flex flex-1 justify-center flex-col items-center">
         <div class="image-container mt-0">
-          <img src="./assets/logo.svg" alt="Logo do Bota Fora" class="logo-image">
+          <img src="./src/assets/logo.svg" alt="Logo do Bota Fora" class="logo-image">
         </div>
 
         <label for="themeSwitcherOne" class="relative inline-flex select-none items-center justify-center gap-2 w-80 mt-20 rounded-full p-3">
@@ -16,7 +16,7 @@
     <div v-if="isChecked" class="pix">
       <div id="body" class="bg-laranja rounded-xl flex flex-col justify-center items-center w-80 mx-auto p-4">
       <span class="text-white flex gap-1 items-center justify-center mx-auto w-1/5 rounded-full mb-3 bg-laranja bg-opacity-80 text-base font-secundaria">
-          <img src="./assets/Pix.svg" class="w-6"/>
+          <img src="./src/assets/Pix.svg" class="w-6"/>
           <p class="text-center">Pix</p>
       </span>
         <h2 class="text-white font-secundaria text-xl">Selecione a quantidade de convites</h2>
@@ -25,7 +25,7 @@
             <span class="font-auxiliar-bold text-laranja pt-1 px-5 text-5xl flex items-center">-</span>
           </button>      
           <div id="howMuchPerson" class="flex flex-col relative items-center w-25 max-w-[60%]">
-              <img src="./assets/Pandeiro.svg" alt="Juta" class="w-4/5">
+              <img src="./src/assets/Pandeiro.svg" alt="Juta" class="w-4/5">
               <p id="numberOfPerson" class="text-white flex absolute items-center font-principal justify-center h-full w-full bottom-1 text-6xl left-0" v-text="numberOfPersonPix"></p>
           </div>
           <button name="plus" class="bg-white rounded-full flex items-center z-index-9" @click="incrementPersonPix">
@@ -37,7 +37,7 @@
       <div v-if="numberOfPersonPix > 0" id="footer" class="flex w-80 mt-32 justify-end mx-auto">
       <div id="checkoutPix" class="w-40 bg-laranja rounded-xl flex flex-col items-center justify-center" @click="copyToClipboard(pixCopiaeCola)">
         <h3 class="font-secundaria text-white">Pix Copia e cola</h3>
-        <img src="./assets/CopyIcon.svg" alt="Símbolo de Copiar" class="w-1/3"> 
+        <img src="./src/assets/CopyIcon.svg" alt="Símbolo de Copiar" class="w-1/3"> 
         <p class="font-secundaria text-white">Clique para Copiar</p>
       </div>
     </div>
@@ -46,7 +46,7 @@
     <div v-else class="cartao">
       <div id="body" class="bg-laranja rounded-xl flex flex-col justify-center items-center w-80 mx-auto p-4">
         <span class="text-white flex gap-1 items-center justify-center mx-auto w-1/5 rounded-full mb-3 bg-laranja bg-opacity-80 text-base font-secundaria">
-          <img src="./assets/CardIcon.svg" class="w-6"/>
+          <img src="./src/assets/CardIcon.svg" class="w-6"/>
           <p class="text-center">Cartão</p>
         </span>
         <h2 class="text-white font-secundaria text-xl">Selecione a quantidade de convites</h2>
@@ -55,7 +55,7 @@
             <span class="font-auxiliar-bold text-laranja pt-1 px-5 text-5xl flex items-center">-</span>
           </button>      
           <div id="howMuchPerson" class="flex flex-col relative items-center w-25 max-w-[60%]">
-              <img src="./assets/Pandeiro.svg" alt="Pandeiro" class="w-4/5">
+              <img src="./src/assets/Pandeiro.svg" alt="Pandeiro" class="w-4/5">
               <p id="numberOfPerson" class="text-white flex absolute items-center font-principal justify-center h-full w-full bottom-1 text-6xl left-0" v-text="numberOfPersonCartao"></p>
           </div>
           <button name="plus" class="bg-white rounded-full flex items-center z-index-9" @click="incrementPersonCartao">
@@ -67,7 +67,7 @@
       <div v-if="numberOfPersonCartao > 0" id="footer" class="flex w-80 mt-32 justify-end mx-auto">
         <a id="checkoutPix" :href="linkPicpay" class="w-40 bg-laranja rounded-xl flex flex-col items-center justify-center">
           <h3 class="font-secundaria text-white">Link Picpay</h3>
-          <img src="./assets/Picpay.svg" alt="Picpay" class="w-1/3"> 
+          <img src="./src/assets/Picpay.svg" alt="Picpay" class="w-1/3"> 
           <p class="font-secundaria text-white">Clique para Acessar</p>
         </a>
       </div>
@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import './assets/styles.css';
+import './src/assets/styles.css';
 
 
 export default {
