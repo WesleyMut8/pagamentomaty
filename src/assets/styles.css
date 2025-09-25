@@ -11,6 +11,11 @@
   font-family: "dk"; 
   src: url("/fonts/dk.otf"); 
 }
+  
+@font-face {
+  font-family: "bobby-jones"; 
+  src: url("/fonts/bobbyjones.otf"); 
+}
 @font-face {
   font-family: "bebas"; 
   src: url("/fonts/BebasNeue-Regular.ttf"); 

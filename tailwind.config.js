@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        laranja: '#f86734', // você pode usar o nome que quiser, como 'laranja'
+        laranja: '#F05323',
+        amatrelo: '#FFD84D',
+        amareloespecificotocompreguica: '#fbe519'
       },
     },
   },
