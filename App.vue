@@ -5,7 +5,7 @@
           <img src="./src/assets/logo.svg" alt="Logo MATY" class="logo-image">
         </div>
 
-        <label for="themeSwitcherOne" class="relative inline-flex select-none items-center justify-center w-80 mt-20 mx-0 rounded-full py-3">
+        <label for="themeSwitcherOne" class="relative inline-flex select-none items-center justify-center w-80 mt-14 mx-0 rounded-full py-3">
           <input type="checkbox" name="themeSwitcherOne" id="themeSwitcherOne" class="sr-only" >
           <span class="text-laranja flex px-3 items-center justify-center w-full rounded-lg py-2 bg-white text-sm font-secundaria">
             <p>Após pagar envie o comprovante no whatsapp!</p>
@@ -20,7 +20,7 @@
           <p class="text-center">Pix</p>
       </span>
         <h2 class="text-white font-secundaria text-lg">Selecione a quantidade de convites</h2>
-        <div id="formHowMuchPerson" class="flex mt-4 items-center">
+        <div id="formHowMuchPerson" class="flex mt-3 items-center">
           <button name="minus" class="bg-amareloespecificotocompreguica rounded-full flex items-center z-index-9" @click="decrementPersonPix">
             <span class="font-auxiliar-bold text-white pt-1 px-5 text-5xl flex items-center">-</span>
           </button>      
